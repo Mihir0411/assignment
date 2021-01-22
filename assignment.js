@@ -1,3 +1,5 @@
+// https://github.com/Mihir0411/assignment
+
 // ( assignment budgetCalcolator )
 
 function budgetCalculator(Watch,Phone,Laptop){
@@ -66,10 +68,10 @@ function hotelCost(day){
     if(day <= 0){
         return "invalid value";
     }
-    if(day<=10){
+    if(day <= 10){
         hotelday = day * 100
     }
-    else if(day<= 20){
+    else if(day <= 20){
         var styFirst10day = 10 * 100;
         var previousday = day - 10;
         var stySecond20day = previousday * 80;
