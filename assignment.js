@@ -1,12 +1,13 @@
-// (1. assignment budgetCalcolator)
+// ( assignment budgetCalcolator )
+
 function budgetCalculator(Watch,Phone,Laptop){
-    if(Watch <= 0){
+    if(Watch < 0){
         return "invalid value";
     }
-    if( Phone <= 0){
+    if( Phone < 0){
         return "invalid value";
     }
-    if(Laptop <= 0){
+    if(Laptop < 0){
         return "invalid value";
     }
         var watchBudget = Watch * 50;
@@ -17,16 +18,13 @@ function budgetCalculator(Watch,Phone,Laptop){
         
         return totalbudget;  
 }
-var result = budgetCalculator(5,2,1)
-// console.log(result)
 
 
 
 
 
+// ( assignment kilometerToMeter )
 
-
-// (2. assignment kilometerToMeter)
 function kilometerToMeter(kilometer){
     var meter = kilometer * 1000;
     if(meter <= 0){
@@ -34,19 +32,18 @@ function kilometerToMeter(kilometer){
     }
     return meter;
 }
-//  console.log(kilometerToMeter(-1));
 
 
 
 
 
 
+// ( assignment megaFriend )
 
-// (3.  assignment megaFriend)
-var friendsList = ['alm', 'alam', 'alamgir', 'alamgir hossain', 'alamgir hossain mihir']
+var friendsList = ['tomal', 'santono', 'yousuf momane', 'mahmudul hasan shaon']
 function megaFriend(friendsList){
     if(friendsList.length== 0){
-        return "not valid";
+        return "friendsList is empty";
     }
         var bigName = friendsList[0]
     for(i=0; i<friendsList.length; i++){
@@ -57,20 +54,18 @@ function megaFriend(friendsList){
     }
     return bigName
 }
- var result = megaFriend(friendsList)
-console.log(result);
 
 
 
 
 
-
-
-
-// (4. assignment hotelCost)
+// ( assignment hotelCost )
 
 function hotelCost(day){
     var hotelday = 0;
+    if(day <= 0){
+        return "invalid value";
+    }
     if(day<=10){
         hotelday = day * 100
     }
@@ -89,6 +84,3 @@ function hotelCost(day){
     }
     return hotelday;
 }
-var result = hotelCost(100)
-
-//console.log(result)
