@@ -47,14 +47,14 @@ function megaFriend(friendsList){
     if(friendsList.length== 0){
         return "friendsList is empty";
     }
-        var bigName = friendsList[0]
+        var bigName = friendsList[0];
     for(i=0; i<friendsList.length; i++){
         var friendName = friendsList[i];
         if(friendName.length > bigName.length){
             bigName = friendName;
         }
     }
-    return bigName
+    return bigName;
 }
 
 
@@ -69,7 +69,7 @@ function hotelCost(day){
         return "invalid value";
     }
     if(day <= 10){
-        hotelday = day * 100
+        hotelday = day * 100;
     }
     else if(day <= 20){
         var styFirst10day = 10 * 100;
@@ -82,7 +82,7 @@ function hotelCost(day){
         var stySecond20day = 10 * 80;
         var previousday = day - 20;
         var styafter20day = previousday * 50;
-        hotelday = styFirst10day + stySecond20day + styafter20day
+        hotelday = styFirst10day + stySecond20day + styafter20day;
     }
     return hotelday;
 }
